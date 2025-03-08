@@ -429,7 +429,7 @@ body.light-mode {
 
 .gallery-header p {
     font-size: 1.2rem;
-    color: var(--primary-black);
+    color: var(--black);
     opacity: 0.8;
     max-width: 600px;
     margin: 0 auto;
@@ -471,7 +471,7 @@ body.light-mode {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-black);
+    color: var(--primary-green);
     transition: transform 0.3s ease;
 }
 
@@ -497,7 +497,9 @@ body.light-mode {
 .description h3 {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
+    color: #000000;
 }
+
 
 .description p {
     font-size: 0.9rem;
@@ -642,7 +644,7 @@ body.light-mode {
 
 .social-link:hover {
     transform: translateY(-5px);
-    color: var(--primary-green);
+    color: var(--white);
 }
 
 .social-icon {
