@@ -642,7 +642,7 @@ body.light-mode {
 
 .social-link:hover {
     transform: translateY(-5px);
-    color: var(--white);
+    color: var(--primary-green);
 }
 
 .social-icon {
