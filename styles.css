@@ -429,7 +429,7 @@ body.light-mode {
 
 .gallery-header p {
     font-size: 1.2rem;
-    color: var(--white);
+    color: var(--primary-black);
     opacity: 0.8;
     max-width: 600px;
     margin: 0 auto;
@@ -471,7 +471,7 @@ body.light-mode {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-green);
+    color: var(--primary-black);
     transition: transform 0.3s ease;
 }
 
