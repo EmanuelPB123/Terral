@@ -352,7 +352,7 @@ body.light-mode {
     width: 100%;
     height: 120%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0px;
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -481,8 +481,8 @@ body.light-mode {
     left: 0;
     width: 100%;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: var(--primary-green);
+    background: linear-gradient(to bottom, #ffffff00 0%, #ffffff 100%);
+    color: var(--primary-black);
     transition: bottom 0.3s ease;
 }
 
@@ -502,6 +502,65 @@ body.light-mode {
 .description p {
     font-size: 0.9rem;
 }
+
+
+/* Añade estos estilos a tu CSS existente */
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-green);
+    transition: transform 0.3s ease;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    object-position: center; /* Centra la imagen */
+}
+
+/* Ajustes para tamaños responsivos */
+@media (max-width: 1024px) {
+    .grid-items-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-items-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    display: block; /* Ocupa todo el espacio disponible */
+}
+
+/* Asegura que los textos dentro del enlace mantienen su formato */
+.custom-link h3, 
+.custom-link p {
+    color: inherit; /* Mantiene el color original del texto */
+}
+
+/* Opcional: Si quieres quitar el subrayado o cambiar el color al pasar el cursor */
+.custom-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Opcional: Si quieres cambiar el cursor a pointer para indicar que es clickeable */
+.custom-link {
+    cursor: pointer;
+}
+
+
 
 /* Google Form Container */
 .form-container {
